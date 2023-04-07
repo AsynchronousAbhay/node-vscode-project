@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: black; */
+    display: flex;
+}
+
+.panel{
+    height: 100vh;
+    width: 22vw;
+    background-color: rgba(0, 0, 0, 0.871);
+    padding: 2.5vw 2vw; 
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.screen{
+    height: 100vh;
+    width: 78vw;
+    background-color: rgb(48, 45, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font: 600 3vmax "'open sans";
+}
+
+.textarea{
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 0.5vw;
+}
+
+button{
+    padding: 0.5vmax 2.5vmax;
+    border-radius: 20px;
+    border: none;
+    font: 400 1.5vmax "open sans";
+    color: white;
+    background-color: royalblue;
+    margin-top: 1vmax;
+    cursor: pointer;
+}
+
+.input{
+    width: 18vmax;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 1vmax;
+    font-size: 1vmax;
+}
+
+ol{
+    margin: 2vmax  0;
+    list-style: none;
+}
+
+ol li{
+    margin: 1.5vmax 0;
+}
+
+ol li a{
+    text-decoration: none;
+    color:yellow;
+    padding: 2vmax 0;
+    font: 400 1.4vmax "open sans";
+}
+

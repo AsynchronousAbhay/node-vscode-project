@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="panel">
+      <form action="/create" method="post">
+        <input class="input" type="text" name="filename" placeholder="filename.ext">
+      </form>
+
+      <ol>
+        <%files.forEach( (file) => {%>
+          <li>
+            <a href="/file/<%= file%>"><%= file%></a>
+            <a href="/delete/<%= file%>">❌</a>
+          </li>
+        <%})%>
+      </ol>
+
+      <div class="textbox">
+        <form action="/update/<%= filename%>" method="post">
+          <textarea class="textarea" name="filedata" cols="30" rows="10"><%= filedata%></textarea>
+          <button>update</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- screen -->
+    <div class="screen"><%= filedata%></div>
+  </div>
+
+</body>
+</html>
